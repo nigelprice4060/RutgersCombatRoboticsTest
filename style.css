@@ -44,7 +44,7 @@
 }
 
 .navigation a:hover {
-    text-decoration: underline;
+    color: rgb(255, 0, 0);
 }
 
 .top {
@@ -53,7 +53,8 @@
 }
 
 .intro {
-  background-color: #2a2a2a;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+                url('RUCRTBackground.png') bottom/cover no-repeat;
     text-align: center;
     height: 100vh;
     display: flex;
@@ -64,6 +65,8 @@
 }
 
 .short {
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), 
+                url('RUCRTBackground.png') bottom/cover no-repeat;
     height: 50vh;
 }
 
@@ -78,6 +81,10 @@
 a {
     text-decoration: none;
     color: inherit;
+}
+
+a:hover {
+    color: rgb(255, 0, 0);
 }
 
 .content {
@@ -277,4 +284,42 @@ a {
 
 .bottom a:hover {
     color: rgb(255, 255, 255);
+}
+
+@media (max-width: 768px) {
+    /* Stack image and text vertically */
+    .section {
+        flex-direction: column;
+        min-height: auto; /* Allows section height to adjust naturally */
+    }
+
+    /* Make both image and text take up full container width */
+    .section .image,
+    .section .text {
+        width: 100%;
+    }
+
+    /* Give the image a fixed proportion/height so it displays nicely on mobile */
+    .section .image {
+        height: 250px;
+    }
+
+    /* Adjust text padding and font sizes for smaller screens */
+    .section .text {
+        padding: 25px 20px;
+    }
+
+    .section .text h1 {
+        font-size: 1.5rem;
+    }
+
+    .section .text p {
+        font-size: 1rem;
+    }
+
+    /* Keep header text responsive */
+    .intro h1 {
+        font-size: 24px;
+        padding: 0 15px;
+    }
 }
