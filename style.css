@@ -54,7 +54,7 @@
 
 .intro {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
-                url('RUCRTBackground.png') bottom/cover no-repeat;
+                url('RUCRTBackground2.png') bottom/cover no-repeat;
     text-align: center;
     height: 100vh;
     display: flex;
@@ -266,6 +266,14 @@ a:hover {
 .gallery-overlay p {
     font-size: 0.85rem;
     color: #ccc;
+}
+
+.section-header {
+    text-align: center;
+    background-color:#181818;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 0px;
 }
 
 .bottom {
