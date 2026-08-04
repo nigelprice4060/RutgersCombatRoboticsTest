@@ -147,7 +147,7 @@ a:hover {
 
 .sponsors-section {
     width: 100%;
-    /* Uses NoTexture.png as background with dark overlay for readability */
+    box-sizing: border-box;
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
                 url('NHRLPit1.jpg') center/cover no-repeat;
     
